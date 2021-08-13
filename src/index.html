@@ -2,8 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name='author' content="Andrey">
+    <meta name='authon' content="Andrey">
     <title>Андрей Браун - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -22,10 +24,12 @@
         </nav>
     </header>
     <div class="main">
-        <h1>Привет <br>Я Андрей Браун</h1>
-        <p>Фулл стек веб и Андроид разработчик</p>
-        <input type="submit" value="Обо мне">
-        <input type="submit" value='Мои работы'>
+        <div class='title-container'>
+            <h1>Привет <br>Я Андрей Браун</h1>
+            <p>Фулл стек веб и Андроид разработчик</p>
+            <input type="submit" value="Обо мне">
+            <input type="submit" value='Мои работы'>
+        </div>
     </div>
     <div class="aboutMe">
         <h2>Обо мне</h2>
@@ -36,55 +40,59 @@
     </div>
     <div class="whatICan">
         <h2>Что я могу</h2>
-        <h4>Веб-дизайн</h4>
-        <img src="img/notebook.png" alt="ноутбук">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusantium.</p>
-        <h4>Разработка</h4>
-        <img src="img/sign.png" alt="Знак">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas quas, tenetur beatae odio neque?</p>
-        <h4>CEO-Оптимизация</h4>
-        <img src="img/rocket.png" alt="Ракета">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptate corporis nostrum illo assumenda?</p>
-        <h4>Маркетинг</h4>
-        <img src="img/thing.png" alt="громофон">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum non reprehenderit recusandae commodi maiores ut placeat vitae.</p>
+        <img class='notebook' src="img/notebook.png" alt="ноутбук">
+        <img class='sign' src="img/sign.png" alt="Знак">
+        <img class='rocket' src="img/rocket.png" alt="Ракета">
+        <img class='thing' src="img/thing.png" alt="громофон">
+        <ul>
+            <li class='first'>Веб-дизайн</li>
+            <li>Разработка</li>
+            <li>CEO-Оптимизация</li>
+            <li>Маркетинг</li>
+        </ul>
+        <p class='first_text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusantium.</p>
+        <p class='secondary_text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas quas, tenetur beatae odio neque?</p>
+        <p class='third_text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptate corporis nostrum illo assumenda?</p>
+        <p class='fourth_text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum non reprehenderit recusandae commodi maiores ut placeat vitae.</p>
     </div>
     <div class="cases">
         <h2>Кейсы</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus?</p>
-        <img src="img/site.png" alt="сайт">
-        <h4>Client:</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4>Website:</h3>
-        <p>https://somedomain.com</p>
-        <h4>Название проекта</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cumque, culpa, perspiciatis neque ipsa magnam illum hic porro placeat totam dicta ullam, nobis vero corrupti enim suscipit eius. Accusantium, laudantium.</p>
+        <p class='headerForCases'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus?</p>
+        <img src="img/siteCorrected.png" alt="сайт">
+        <h4>Client:</h4>
+        <p class='someComp'>Какая-то компания</p>
+        <h4>Website:</h4>
+        <p class='someDom'>https://somedomain.com</p>
         <input type="submit" value="Visit Live Site">
-        
+        <h3>Название проекта</h3>
+        <p class='projectDesk'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cumque, culpa, perspiciatis neque ipsa magnam illum hic porro placeat totam dicta ullam, nobis vero corrupti enim suscipit eius. Accusantium, laudantium.</p>
     </div>
     <div class="costCounting">
         <h2>Расчет стоимости</h2>
         <h4>Тип сайта</h4>
         <select name="siteType">
+            <option value="" class='disabled' disabled selected hidden>Выберите пункт....</option>
             <option value="something">Что-то 1</option>
             <option value="something">Что-то 2</option>
             <option value="something">Что-то 3</option>
         </select>
         <h4>Дизайн</h4>
         <select name="design">
+            <option value="" class='disabled' disabled selected hidden>Выберите пункт....</option>
             <option value="something">Что-то 1</option>
             <option value="something">Что-то 2</option>
             <option value="something">Что-то 3</option>
         </select>
         <h4>Адаптивность</h4>
         <select name="adaptivity">
+            <option value="" class='disabled' disabled selected hidden>Выберите пункт....</option>
             <option value="something">Что-то 1</option>
             <option value="something">Что-то 2</option>
             <option value="something">Что-то 3</option>
         </select>
-        <h4>Сроки</h4> <h4>0</h4>
-        <h4>Стоимость</h4> <h4>0</h4>
-        
+        <div></div>
+        <h5 class='timeTo'>Сроки</h5><h6 class='time'>0</h6>
+        <h5 class='costTo'>Стоимость</h5><h6 class='cost'>0</h6>
     </div>
     <div class="someStatistics">
         <h2>Немного статистики</h2>
