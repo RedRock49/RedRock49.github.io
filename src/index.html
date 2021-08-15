@@ -27,8 +27,8 @@
         <div class='title-container'>
             <h1>Привет <br>Я Андрей Браун</h1>
             <p>Фулл стек веб и Андроид разработчик</p>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value='Мои работы'>
+            <input class='btn' type="submit" value="Обо мне">
+            <input class='btn' type="submit" value='Мои работы'>
         </div>
     </div>
     <div class="aboutMe">
@@ -36,7 +36,7 @@
         <img src="img/photo.png" alt="Здесь должна быть картинка но сорса нету">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia non, alias natus, reiciendis labore odit nostrum eveniet, a excepturi adipisci mollitia dicta ipsum. Quas tempora labore consectetur, quaerat eligendi in!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque accusamus aliquid cum saepe maxime veniam sapiente, voluptas, fugiat obcaecati expedita amet soluta esse, a sed illo odit quis repellendus?</p>
-        <input type="submit" value="Скачать резюме">
+        <input class='btn' type="submit" value="Скачать резюме">
     </div>
     <div class="whatICan">
         <h2>Что я могу</h2>
@@ -59,13 +59,17 @@
         <h2>Кейсы</h2>
         <p class='headerForCases'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus?</p>
         <img src="img/siteCorrected.png" alt="сайт">
-        <h4>Client:</h4>
-        <p class='someComp'>Какая-то компания</p>
-        <h4>Website:</h4>
-        <p class='someDom'>https://somedomain.com</p>
-        <input type="submit" value="Visit Live Site">
+        <div class='class1'>
+            <h4>Client:</h4>
+            <p class='someComp'>Какая-то компания</p>
+            <h4>Website:</h4>
+            <p class='someDom'>https://somedomain.com</p>
+            <input class='btn' type="submit" value="Visit Live Site">
+        </div>
+        <div class='class2'>
         <h3>Название проекта</h3>
         <p class='projectDesk'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cumque, culpa, perspiciatis neque ipsa magnam illum hic porro placeat totam dicta ullam, nobis vero corrupti enim suscipit eius. Accusantium, laudantium.</p>
+        </div>
     </div>
     <div class="costCounting">
         <h2>Расчет стоимости</h2>
@@ -95,52 +99,58 @@
         <h5 class='costTo'>Стоимость</h5><h6 class='cost'>0</h6>
     </div>
     <div class="someStatistics">
-        <h2>Немного статистики</h2>
-        <img src="img/smile.png" alt="Smile">
-        <h2>120</h2>
-        <h4>Счастливых клиентов</h4>
-        <img src="img/signOrange.png" alt="signOrange">
-        <h2>4,600</h2>
-        <h4>Часов работы</h4>
-        <img src="img/checkMark.png" alt="checkMark">
-        <h2>340</h2>
-        <h4>Проектов завершено</h4>
-        <img src="img/reward.png" alt="reward">
-        <h2>23</h2>
-        <h4>Наград получено</h4>
+        <h2 class='title'>Немного статистики</h2>
+        <img class='firstPic' src="img/smile.png" alt="Smile">
+        <img class='nextPic' src="img/signOrange.png" alt="signOrange">
+        <img class='nextPic' src="img/checkMark.png" alt="checkMark">
+        <img class='nextPic' src="img/reward.png" alt="reward">
+        <ul>
+            <li class='firstNum'>120</li>
+            <li class='nextNum'>4,600</li>
+            <li class='nextNum'>340</li>
+            <li class='lastNum'>23</li>
+        </ul>
+        <ul>
+            <li class='firstText'>Счастливых клиентов</li>
+            <li class='secondText'>Часов работы</li>
+            <li class='thirdText'>Проектов завершено</li>
+            <li class='fourthText'>Наград получено</li>
+        </ul>
     </div>
     <div class="feedback">
         <h2>Отзывы</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga distinctio vitae corrupti, quas eveniet magni, laudantium est unde quos reprehenderit ex? Deleniti unde nulla, excepturi tenetur commodi deserunt esse, sed dolorum molestiae ea nisi! Illo fugiat eaque expedita numquam perferendis deleniti nihil eveniet, excepturi voluptas eum adipisci et architecto perspiciatis! Minima consequatur doloribus, in perspiciatis amet earum distinctio omnis ratione.</p>
+        <img src="img/dumbguy.png" alt="челик">
+        <p>Lorem ipsum dolor si expedita numquam perferendis deleniti nihil eveniet, excepturi voluptas eum adipisci et architecto perspiciatis! Minima consequatur doloribus, in perspiciatis amet earum distinctio omnis ratione.</p>
         <p><b>Михаил</b>, Ген директор ПАО "ГазПрома"</p>
-        <input type="radio" name="feedbackPages">
-        <input type="radio" name="feedbackPages">
-        <input type="radio" name="feedbackPages">
+        <input defaultChecked class='firstBtn btn' type="radio" name="feedbackPages">
+        <input class='nextBtn btn' type="radio" name="feedbackPages">
+        <input class='nextBtn btn' type="radio" name="feedbackPages">
     </div>
     <div class="myContacts">
         <h2>Мои Контакты</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quasi perferendis temporibus aspernatur odio corporis!</p>
-        <img src="img/geoMark.png" alt="geoMark">
-        <p>Санкт-Петербург<br>Невский проспект 11</p>
-        <img src="img/mailConvert.png" alt="mailConvert">
-        <p>info@companyname.com</p>
-        <img src="img/phone.png" alt="phone">
-        <p>+7 999 999-99-99</p>
+        <p class='undertext'>Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor. Lorem ipsum dolor sit.</p>
+        <img class='geo' src="img/geoMark.png" alt="geoMark">
+        <img class='mailConvert' src="img/mailConvert.png" alt="mailConvert">
+        <img class='phone' src="img/phone.png" alt="phone">
+        <p class='firstUnderText'>Санкт-Петербург<br>Невский проспект 11</p>
+        <p class='nextUnderText'>info@companyname.com</p>
+        <p class='lastUnderText'>+7 999 999-99-99</p>
         <form action="a">
             <h3>Оставьте мне сообщение</h3>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-            <input type="submit" value="Отправить">
+            <input type="text" class='name' placeholder="Имя" required>
+            <input type="email" class='mail' placeholder="Email" required>
+            <textarea name="message" class='message' cols="30" rows="10" placeholder="Cообщение"></textarea required>
+            <input class='send btn' type="submit" value="Отправить">
         </form>
-        <img src="img/facebook.png" alt="facebook">
-        <img src="img/twitter.png" alt="twitter">
-        <img src="img/ball.png" alt="ball">
-        <img src="img/github.png" alt="github">
-        <img src="img/instagramm.png" alt="instagramm">
-        <img src="img/linkedIn.png" alt="linkedIn">
+        <img class='fb' src="img/facebook.png" alt="facebook">
+        <img class='tw' src="img/twitter.png" alt="twitter">
+        <img class='ball' src="img/ball.png" alt="ball">
+        <img class='git' src="img/github.png" alt="github">
+        <img class='insta' src="img/instagramm.png" alt="instagramm">
+        <img class='linked' src="img/linkedIn.png" alt="linkedIn">
 
     </div>
+    <div class='map'></div>
     <footer>
         <h6>Copyright © 2021 Андрей Браун. Design by Web</h6>
     </footer>
