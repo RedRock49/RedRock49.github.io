@@ -14,20 +14,39 @@ nav{
     padding-left:290px;
     line-height: 60px;
     float:left;
-    
+    transition:0.75s ease;
+    opacity: 0;
+}
+.logo{
+    opacity: 1;
 }
 .menu{
     padding-left:300px;
     float:left;
-    
 }
 .menu li{
     float:left;
     color:white;
     margin-right:40px;
     line-height:60px;
+    text-transform: uppercase;
+    transition:0.1s linear;
+    transform:scale(1);
+    cursor:pointer;
 }
-.main{
+.menu li a{
+    color:white
+}
+.menu li a:visited{
+    color:white
+}
+.menu li a:hover{
+    color:#d17700;
+}
+.menu li:active{
+    transform:scale(1.2)
+}
+main{
     height:100%;
     background: url(../img/guy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.png) center/100% ;
 }
@@ -35,6 +54,12 @@ nav{
     text-align: center;
     float: left;
     margin-top:432px;
+    transition-duration: 0.6s;
+    transition-property: margin-left, opacity;
+    opacity: 0;
+}
+.title-container{
+    opacity: 1;
     margin-left:405px;
 }
 .title-container h1{
@@ -57,6 +82,14 @@ nav{
     margin:14px;
     margin-top:55px;
     color:#79818d;
+    transition-duration: 0.1s;
+}
+.title-container input:hover{
+    background-color:#384354;
+    color:white;
+}
+.title-container input:active{
+    transform: scale(1.1);
 }
 .btn:hover{
     cursor:pointer;
@@ -75,9 +108,15 @@ nav{
     padding-top:105px;
     color:#263244;
     font-weight: bold;
-    border-bottom:4px solid #d17700;
-    padding-bottom:31px;
-
+}
+.aboutMe h2::after{
+    content: "";
+    display:block;
+    width:70px;
+    height:4px;
+    background-color:#d17700;
+    margin-left:919px;
+    margin-top:31px;
 }
 .aboutMe img{
     margin-left:860px;
@@ -114,8 +153,16 @@ nav{
     padding-top: 107px;
     font-weight:bold;
     text-transform: uppercase;
-    border-bottom:4px solid #d17700;
-    padding-bottom:31px;
+    
+}
+.whatICan h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    display:block;
+    background-color:#d17700 ;
+    margin-top:31px;
+    margin-left:919px;
 }
 .notebook{
     margin-left:488px;
@@ -174,8 +221,15 @@ nav{
     text-align: center;
     padding-top:110px;
     font-weight: bold;
-    border-bottom:4px solid #d17700;
-    padding-bottom:31px;
+}
+.cases h2::after{
+    content:"";
+    background-color:#d17700;
+    width:70px;
+    height:4px;
+    margin-top:31px;
+    margin-left:915px;
+    display:block;
 }
 .headerForCases{
     margin-top:36px;
@@ -225,6 +279,17 @@ nav{
     font-weight: bold;
     margin-left:390px;
     margin-top:22px;
+    transform:scale(1);
+    transition-duration: 0.1s;
+    position:absolute;
+    z-index:-1;
+}
+.cases input:hover{
+    background:white;
+    color:#63b5ae;
+}
+.cases input:active{
+    transform:scale(1.1);
 }
 .class1{
     float: left;
@@ -305,8 +370,15 @@ nav{
     font-weight:bold;
     padding-top:100px;
     color:#323e4f;
-    border-bottom:4px solid #d17700;
-    padding-bottom:32px;
+}
+.title::after{
+    background-color:#d17700;
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    margin-top:31px;
+    margin-left:918px;
 }
 .someStatistics img{
     margin-top:84px;
@@ -385,9 +457,16 @@ nav{
     font-weight: bold;
     padding-top:105px;
     color:#243042;
-    border-bottom:4px solid #d17700;
-    padding-bottom:34px;
     text-transform: uppercase;
+}
+.feedback h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background-color:#d17700;
+    margin-top:31px;
+    margin-left:915px;
+    display:block;
 }
 .feedback img{
     margin:58px 0px 55px 900px;
@@ -400,6 +479,7 @@ nav{
     margin-left:595px;
     margin-bottom:38px;
 }
+
 .firstBtn{
     margin-left:915px;
     margin-right:5px;
@@ -432,8 +512,15 @@ footer h6{
     font-weight:bold;
     padding-top:105px;
     color:white;
-    border-bottom:4px solid #d17700;
-    padding-bottom:32px;
+}
+.myContacts h2::after{
+    content:"";
+    background-color:#d17700;
+    width:70px;
+    height:4px;
+    display:block;
+    margin-top:31px;
+    margin-left:917px;
 }
 .undertext{
     color:white;
@@ -493,6 +580,15 @@ footer h6{
     border-radius: 5px;
     padding:10px;
     text-align:center;
+    transform: scale(1);
+    transition-duration: 0.1s;
+}
+.send:hover{
+    background:white;
+    color:#243042;
+}
+.send:active{
+    transform: scale(1.1);
 }
 .name{
     width: 352px;
