@@ -66,12 +66,12 @@
                     <img class='rocket col-1' src="img/rocket.png" alt="Ракета">
                     <img class='thing col-1' src="img/thing.png" alt="громофон">
                 </div>
-                <ul>
-                    <li>Веб-дизайн</li>
-                    <li>Разработка</li>
-                    <li>CEO-Оптимизация</li>
-                    <li>Маркетинг</li>
-                </ul>
+                <div class="flexboxshit">
+                    <h3 class='text text1'>Веб-дизайн</h3>
+                    <h3 class='text text2'>Разработка</h3>
+                    <h3 class='text'>CEO-Оптимизация</h3>
+                    <h3 class='text text4'>Маркетинг</h3>
+                </div>
                 <div class="flexboxshit">
                     <p class='first_text col-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusantium.</p>
                     <p class='secondary_text col-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas quas, tenetur beatae odio neque?</p>
@@ -105,7 +105,7 @@
     </div>
     <div class="costCounting">
         <div class="container">
-            <div class="row">
+            <div class="row shadow costCountingOgranichitel">
                     <h2>Расчет стоимости</h2>
                     <h4 class='col-2 offset-2'>Тип сайта</h4>
                     <select class='col-10 offset-2' name="siteType">
@@ -145,7 +145,7 @@
                 </div>
                 <div class="flexboxshit">
                     <img class='smile col-1' src="img/smile.png" alt="Smile">
-                    <img class='sign col-1' src="img/signOrange.png" alt="signOrange">
+                    <img class='sign2 col-1' src="img/signOrange.png" alt="signOrange">
                     <img class='check col-1' src="img/checkMark.png" alt="checkMark">
                     <img class='reward col-1' src="img/reward.png" alt="reward">
                 </div>
@@ -182,28 +182,39 @@
         </div>
     </div>
     <div class="myContacts">
-        <h2>Мои Контакты</h2>
-        <p class='undertext'>Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor. Lorem ipsum dolor sit.</p>
-        <img class='geo' src="img/geoMark.png" alt="geoMark">
-        <img class='mailConvert' src="img/mailConvert.png" alt="mailConvert">
-        <img class='phone' src="img/phone.png" alt="phone">
-        <p class='firstUnderText'>Санкт-Петербург<br>Невский проспект 11</p>
-        <p class='nextUnderText'>info@companyname.com</p>
-        <p class='lastUnderText'>+7 999 999-99-99</p>
-        <form action="#">
-            <h3>Оставьте мне сообщение</h3>
-            <input type="text" class='name' placeholder="Имя" required>
-            <input type="email" class='mail' placeholder="Email" required>
-            <textarea name="message" class='message' cols="30" rows="10" placeholder="Cообщение" required></textarea>
-            <input class='send btn' type="submit" value="Отправить">
-        </form>
-        <img class='fb' src="img/facebook.png" alt="facebook">
-        <img class='tw' src="img/twitter.png" alt="twitter">
-        <img class='ball' src="img/ball.png" alt="ball">
-        <img class='git' src="img/github.png" alt="github">
-        <img class='insta' src="img/instagramm.png" alt="instagramm">
-        <img class='linked' src="img/linkedIn.png" alt="linkedIn">
-
+        <div class="container">
+            <div class="row">
+                <div class="flexboxnice">
+                    <h2>Мои Контакты</h2>
+                </div>
+                <p class='undertext'>Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor. Lorem ipsum dolor sit.</p>
+                <!--
+                <img class='geo col-1' src="img/geoMark.png" alt="geoMark">
+                <img class='mailConvert col-1' src="img/mailConvert.png" alt="mailConvert">
+                <img class='phone col-1' src="img/phone.png" alt="phone">
+                <p class='firstUnderText'>Санкт-Петербург<br>Невский проспект 11</p>
+                <p class='nextUnderText'>info@companyname.com</p>
+                <p class='lastUnderText'>+7 999 999-99-99</p>
+                -->
+                <form action="#">
+                    <h3>Оставьте мне сообщение</h3>
+                    <input type="text" class='offset-2 name' placeholder="Имя" required>
+                    <input type="email" class='mail' placeholder="Email" required>
+                    <textarea name="message" class='offset-2 message' cols="30" rows="10" placeholder="Cообщение" required></textarea>
+                    <input class='send btn' type="submit" value="Отправить">
+                </form>
+                <div class="offset-4 col-4 ogranichitel">
+                    <div class="flexboxshit">
+                        <img class='fb' src="img/facebook.png" alt="facebook">
+                        <img class='tw' src="img/twitter.png" alt="twitter">
+                        <img class='ball' src="img/ball.png" alt="ball">
+                        <img class='git' src="img/github.png" alt="github">
+                        <img class='insta' src="img/instagramm.png" alt="instagramm">
+                        <img class='linked' src="img/linkedIn.png" alt="linkedIn">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class='map'></div>
     <footer>

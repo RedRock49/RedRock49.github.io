@@ -190,11 +190,21 @@ main{
     width:51px;
     height:44px;
 }
-.whatICan li{
+.text{
     float:left;
     color:#cf7600;
     font-weight: bold;
     font-size:13pt;
+    margin-top:10px;
+}
+.text1{
+    margin-left:10px;
+}
+.text2{
+    margin-left:33px;
+}
+.text4{
+    margin-right:18px;
 }
 .whatICan p{
     max-width:211px;
@@ -303,6 +313,7 @@ main{
     font-weight:bold;
     color:#1c2534;
     margin-bottom:60px;
+    margin-top:25px;
 }
 .costCounting h4{
     text-transform: uppercase;
@@ -356,6 +367,7 @@ main{
     color:white;
     transform:scale(1);
     transition: ease 0.2s;
+    margin-bottom:25px;
 }
 .costCounting input:hover{
     background:white;
@@ -392,7 +404,7 @@ main{
     transform:scale(1);
     margin-top:50px;
 }
-.sign{
+.sign2{
     width:60px;
     height:52px;
     transform:scale(1);
@@ -530,7 +542,7 @@ footer h6{
     height:4px;
     display:block;
     margin-top:31px;
-    margin-left:917px;
+    margin-left:80px;
 }
 .undertext{
     color:white;
@@ -539,16 +551,19 @@ footer h6{
     margin-top:32px;
 }
 .geo{
-    margin-left:700px;
     margin-top:44px;
+    width:18px;
+    height:26px;
 }
 .mailConvert{
     margin-top:50px;
-    margin-left:220px;
+    width:29px;
+    height:24px;
 }
 .phone{
-    margin-left:220px;
-    margin-top:48px
+    margin-top:48px;
+    width:24px;
+    height:24px;
 }
 .firstUnderText{
     color:white;
@@ -565,7 +580,6 @@ footer h6{
     margin-top:15px;
     margin-left:100px;
     float:left;
-
 }
 .lastUnderText{
     color:white;
@@ -583,15 +597,15 @@ footer h6{
 }
 .send{
     background: none;
-    margin-left:897px;
-    margin-top:28px;
+    
+    margin-top:150px;
     color:white;
     border: 2px solid white;
     border-radius: 5px;
     padding:10px;
     text-align:center;
     transform: scale(1);
-    transition-duration: 0.1s;
+    transition:ease 0.1s;
 }
 .send:hover{
     background:white;
@@ -603,7 +617,6 @@ footer h6{
 .name{
     width: 352px;
     height:34px;
-    margin-left:575px;
     margin-top:45px;
     padding-left:10px;
     background: rgba(255,255,255,0.88);
@@ -611,13 +624,12 @@ footer h6{
 .mail{
     width:352px;
     height:34px;
-    margin-left:29px;
     margin-top:45px;
+    margin-left:30px;
     padding-left:10px;
     background: rgba(255,255,255,0.88);
 }
 .message{
-    margin-left:575px;
     margin-top:14px;
     padding-left:10px;
     padding-top:10px;
@@ -628,25 +640,25 @@ footer h6{
 }
 .fb{
     margin-top:67px;
-    margin-left:753px;
+    height:auto;
 }
 .tw{
     margin-top:71px;
-    margin-left:51px;
+    height:auto;
 }
 .ball{
     margin-top:69px;
-    margin-left:51px;
+    height:auto;
 }
 .git{
     margin-top:69px;
-    margin-left:48px;
+    height:auto;
 }
 .insta{
     margin-top:69px;
-    margin-left:49px;
+    height:auto;
 }
 .linked{
     margin-top:69px;
-    margin-left:50px;
+    height:auto;
 }
