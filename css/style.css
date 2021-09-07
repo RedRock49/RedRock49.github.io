@@ -1,5 +1,6 @@
 body{
     font-family:Arial,'sans-serif';
+    flex-shrink: 1;
 }
 
 nav{
@@ -100,9 +101,9 @@ main{
 }
 .aboutMe{
     box-shadow:0px -10px 8px 0px rgba(50, 50, 50, 0.25);
-    background:url(../img/dwnldBtnIcon.png) bottom 68px right 988px no-repeat ,white;
-    height: 717px;
-
+    background:white;
+    height: auto;
+    padding-bottom:97px;
 }
 .aboutMe h2{
     font-size:28px;
@@ -120,15 +121,16 @@ main{
     height:4px;
     background-color:#d17700;
     margin-top:31px;
-    margin-left:28px;
+    margin-left:32px;
 }
 .aboutMe img{
-    width:225px;
-    height:200px;
+    width:15%;
+    height:15%;
+    margin-top:15px;
 }
 .aboutMe p{
     display:block;
-    margin-top:40px;
+    margin-top:23px;
     text-align: left;
     color:#3f495a;
     max-width: 732px;
@@ -136,7 +138,7 @@ main{
 .aboutMe input{
     border:2px solid #6f707e;
     border-radius:6px;
-    background: none;
+    background:url(../img/dwnldBtnIcon.png) no-repeat bottom 50% left 6%, none;
     color:#6f707e;
     width:150px;
     height:40px;
@@ -144,6 +146,7 @@ main{
     transform:scale(1);
     transition: ease;
     transition-duration: 0.2s;
+    padding-left:25px;
 }
 .aboutMe input:hover{
     background-color:#243042;
@@ -472,13 +475,14 @@ main{
     margin-top:30px;
 }
 .feedback{
-    height:592px;
+    height:auto;
+    padding-bottom:20px;
 }
 .feedback h2{
     text-align: center;
     font-size:28px;
     font-weight: bold;
-    padding-top:105px;
+    padding-top:50px;
     color:#243042;
     text-transform: uppercase;
 }
@@ -492,8 +496,10 @@ main{
     display:block;
 }
 .feedback img{
-    width:100px;
-    height: 102px;
+    width:8%;
+    height: 8%;
+    margin-top:15px;
+    margin-bottom:15px;
 }
 .feedback p{
     text-align: center;
@@ -501,13 +507,6 @@ main{
     max-width:688px;
     font-size:12px;
     margin-bottom:38px;
-}
-.firstBtn{
-    float:left;
-}
-.nextBtn{
-    margin-right:5px;
-    float:left;
 }
 .map{
     background: url(../img/map.jpg);
@@ -525,7 +524,7 @@ footer h6{
 }
 .myContacts{
     background: url(../img/bg_contacts.jpg);
-    height:808px;
+    height:85%;
 }
 .myContacts h2{
     text-align:center;
@@ -551,24 +550,23 @@ footer h6{
     margin-top:32px;
 }
 .geo{
-    margin-top:44px;
-    width:18px;
-    height:26px;
+    width:3%;
+    height:3%;
+    margin-top:20px;
 }
 .mailConvert{
-    margin-top:50px;
-    width:29px;
-    height:24px;
+    width:3.8%;
+    height:3.8%;
+    margin-top:20px;
 }
 .phone{
-    margin-top:48px;
-    width:24px;
-    height:24px;
+    width:3%;
+    height:3%;
+    margin-top:20px;
 }
 .firstUnderText{
     color:white;
     font-size:15px;
-    margin-left:632px;
     margin-top:15px;
     max-width:160px;
     text-align: center;
@@ -578,13 +576,11 @@ footer h6{
     color:white;
     font-size:15px;
     margin-top:15px;
-    margin-left:100px;
     float:left;
 }
 .lastUnderText{
     color:white;
     font-size:15px;
-    margin-left:1151px;
     margin-top:15px
 }
 .myContacts h3{
@@ -593,12 +589,11 @@ footer h6{
     font-weight: bold;
     text-align:center;
     color:white;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .send{
     background: none;
-    
-    margin-top:150px;
+    margin-top:50px;
     color:white;
     border: 2px solid white;
     border-radius: 5px;
@@ -617,14 +612,14 @@ footer h6{
 .name{
     width: 352px;
     height:34px;
-    margin-top:45px;
+    margin-top:20px;
     padding-left:10px;
     background: rgba(255,255,255,0.88);
 }
 .mail{
     width:352px;
     height:34px;
-    margin-top:45px;
+    margin-top:20px;
     margin-left:30px;
     padding-left:10px;
     background: rgba(255,255,255,0.88);
@@ -661,4 +656,9 @@ footer h6{
 .linked{
     margin-top:69px;
     height:auto;
+}
+.flexboxhelp{
+    display:flex;
+    justify-content: space-between;
+    width:32%;
 }
